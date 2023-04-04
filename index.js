@@ -183,3 +183,11 @@ document.querySelector("#submit").addEventListener("click", function() {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+
+// relocate blog page after clicking blog button
+document.getElementById('blog-btn').addEventListener('click',function(){
+   // location.href = "blog.html";
+   window.open('blog.html', '_blank');
+
+})
