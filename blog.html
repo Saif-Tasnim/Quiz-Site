@@ -87,66 +87,47 @@
 
          <!-- Question -2 -->
 
-        <div class="ques-1 p-4 border-2 border-slate-400 text-lg">
-            <h2 class="font-bold text-xl mb-3"> 1. Difference Between map(), filter(), forEach() & find() ? </h2>
+        <div class="ques-2 p-4 border-2 border-slate-400 text-lg mt-6">
+            <h2 class="font-bold text-xl mb-3 text-center"> 1. Difference Between map(), filter(), forEach() & find() ? </h2>
             
             <b class="text-blue-600"> ANSWER : </b>
             
             <p class="mt-3">
-              In JavaScript, map(), filter(), forEach(), and find() are all higher-order array
-                methods that allow developers to manipulate arrays in different ways.
+                In web development, local storage, session storage, and cookies are used to store data on the client-side (i.e., on the user's computer). Here are the differences between them:
 
-                Here are the differences between them:
-
-             <p class="mt-5 font-bold">  map(): map() applies a callback function to each element of an array and returns a new array with the
-                same number of elements, where each element is the result of the callback function. It does not modify
-                the original array.<br></p> 
+            <p class="mt-5 font-bold">  Local Storage: Local storage is a web storage API that allows you to store key-value pairs in the user's web browser. The data stored in local storage persists even after the user closes the web browser or restarts their computer. Local storage has a higher storage limit than cookies and can store up to 10MB of data. Local storage is scoped to the domain, which means that data stored in local storage by one domain cannot be accessed by another domain.<br></p> 
 
             <div class="mt-8 w-[700px] bg-blue-950 text-white p-5 rounded-md ml-4">
-                const numbers = [1, 2, 3, 4, 5];<br>
-                const multipliedNumbers = numbers.map(number => number * 2); <br>
-                console.log(multipliedNumbers); // Output: [2, 4, 6, 8, 10] <br>
+                localStorage.setItem('key', 'value'); <br>
+                const value = localStorage.getItem('key'); <br>
+                
             </div>
             </p>
 
 
             <p class="mt-5 font-bold">
-                filter(): filter() applies a callback function to each element of an array and returns a new array with only
-                the elements that pass a certain condition defined by the callback function. It does not modify the original
-                array.
+                Session Storage: Session storage is similar to local storage, but the data stored in session storage is deleted when the user closes the web browser. Session storage has the same storage limit as local storage (up to 10MB). Session storage is also scoped to the domain.
     
                 <div class="mt-8 w-[700px] bg-blue-950 text-white p-5 rounded-md ml-4">
-                    const numbers = [1, 2, 3, 4, 5]; <br>
-                    const evenNumbers = numbers.filter(number => number % 2 === 0); <br>
-                    console.log(evenNumbers); // Output: [2, 4] <br>
+                    sessionStorage.setItem('key', 'value'); <br>
+                    const value = sessionStorage.getItem('key'); <br>
+                    
                 </div>
     
             </p>
         
             <p class="mt-5 font-bold">
-                forEach(): forEach() applies a callback function to each element of an array and does not return anything.
-                It simply executes the callback function on each element of the array. It does not modify the original
-                array.
+                Cookies: Cookies are small text files that are stored in the user's web browser. Cookies can be used to store small amounts of data, such as user preferences or login information. Cookies can be persistent, which means they remain on the user's computer even after they close the web browser, or session-only, which means they are deleted when the user closes the web browser. Cookies are sent to the server with every HTTP request, which can impact performance. Cookies can also be limited in size, with a maximum size of 4KB per cookie.
     
     
                 <div class="mt-8 w-[700px] bg-blue-950 text-white p-5 rounded-md ml-4">
-                    const numbers = [1, 2, 3, 4, 5];<br>
-                    numbers.forEach(number => console.log(number * 2)); // Output: 2 4 6 8 10<br>
+                    document.cookie = 'key=value'; <br>
+                    const value = document.cookie; <br>
+                    
                 </div>
             </p>
         
-            <p class="mt-5 font-bold">
-            find(): find() applies a callback function to each element of an array and returns the first element that
-            passes a certain condition defined by the callback function. If no element passes the condition, it returns
-            undefined. It does not modify the original array.
-
-            <div class="mt-8 w-[700px] bg-blue-950 text-white p-5 rounded-md ml-4">
-                const numbers = [1, 2, 3, 4, 5]; <br>
-                const evenNumber = numbers.find(number => number % 2 === 0); <br>
-                console.log(evenNumber); // Output: 2 <br>
-            </div>
-            
-           </p>
+          
         </div>
 
          <!-- Question -3 -->
